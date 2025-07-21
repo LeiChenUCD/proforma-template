@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table tr td {
+    padding: unset;
+    min-width: 100px;
+    text-wrap: nowrap;
+    height: 20px;
+    width: 16%;
+    /* border: 1px solid gray; */
+}
+
+table tr td input {
+    min-width: 50px;
+    text-align: end;
+}
+
+table tr th {
+    background: #b0bccc;
+}
+
+.empty-row {
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+.empty-col {
+    border-bottom: 0px;
+    border-top: 0px;
+}
+
+.yellow-header {
+    background: #fff4cc;
+}
+
+.transparent-header {
+    background: transparent;
+}
+
+#des {
+    text-wrap: wrap;
+    height: fit-content;
+}
+
+#des:focus {
+    outline: 0;
+}
+
+#plan {
+    text-wrap: wrap;
+    height: fit-content;
+}
+
+#plan:focus {
+    outline: 0;
+}
+
+#values {
+    text-wrap: wrap;
+    height: fit-content;
+}
+
+#values:focus {
+    outline: 0;
+}
+
+#address {
+    text-wrap: wrap;
+    height: fit-content;
+}
+
+#address:focus {
+    outline: 0;
+}
+
+input {
+    border: 0;
+    border-bottom: 1px black solid;
+}
+
+.bottom {
+    border-bottom: 1px black solid;
+}
+
+.right {
+    border-right: 1px black solid;
+}
+
+.left {
+    border-left: 1px black solid;
+}
+
+.top {
+    border-top: 1px black solid;
+}
+
+.alignRight {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.header {
+    background: rgb(14, 158, 213);
+    color: white;
+}
+
+.grayEntry {
+    background: rgb(217, 217, 217);
+}
+
+.yellowHighlight {
+    background: rgb(255, 255, 0);
+}
+
+.boldEntry {
+    font-weight: bold;
+}
+
+.redEntry {
+    color: rgb(255, 58, 0);
+}
+
+.underlinedEntry {
+    text-decoration: underline;
+}
+
+button {
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgb(14, 158, 213);
+    color: white;
+    border: 0px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.input:focus{
+    outline: none;
+}

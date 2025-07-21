@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <section style="display: flex;">
+    <table>
+      <tr>
+        <td class="boldEntry underlinedEntry">Project Summary</td>
+        <td><button id="copy_link">Copy Link</button></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Purchase Date</td>
+        <td contenteditable="true" class="bottom input" id="b2"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">ADDRESS</td>
+        <td contenteditable="true" class="bottom input" id="b3"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Type</td>
+        <td contenteditable="true" class="bottom input" id="b4"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Strategies</td>
+        <td contenteditable="true" class="bottom input" id="b5"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Total Lot Size</td>
+        <td class="alignRight"><input id="b6"></td>
+        <td class="right">sqft</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Total Units-Living</td>
+        <td class="alignRight"><input id="b8"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Floor Area per Unit</td>
+        <td class="alignRight"><input id="b9"></td>
+        <td class="right">sqft</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Total Units-Garage</td>
+        <td class="alignRight"><input id="b10"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom boldEntry">Garage Area per Unit</td>
+        <td class="bottom alignRight"><input id="b11"></td>
+        <td class="bottom right">sqft</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="header">Project Data</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="top">Purchase Price</td>
+        <td class="alignRight top">$<input id="b15"></td>
+        <td class="top"></td>
+        <td class="top"></td>
+        <td class="top">Acquisition+Design Term</td>
+        <td class="alignRight top"><input id="f15"></td>
+        <td class="right top">mo</td>
+      </tr>
+      <tr>
+        <td>Hard costs-Building costs</td>
+        <td class="alignRight">$<input id="b16"></td>
+        <td>per sqft</td>
+        <td></td>
+        <td>Construction Term</td>
+        <td class="alignRight"><input id="f16"></td>
+        <td class="right">mo</td>
+      </tr>
+      <tr>
+        <td class="bottom">Hard costs-Garage costs</td>
+        <td class="alignRight bottom">$<input id="b17"></td>
+        <td class="bottom">per sqft</td>
+        <td class="bottom"></td>
+        <td class="bottom">Selling Term</td>
+        <td class="alignRight bottom"><input id="f17"></td>
+        <td class="bottom right">mo</td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="header">Acquisition Costs</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="top"><button id="ac_add">add</button><button id="ac_delete">delete</button></td>
+        <td class="top alignRight"></td>
+        <td class="right top"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="">Property Purchase Price</td>
+        <td class="alignRight" title="= Purchase Price">$<span id="b21"></span></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Downpayment</td>
+        <td class="alignRight" title="= Property Purchase Price * Downpayment Percentage">$<span id="b22"></span></td>
+        <td class="right"><input id="c22">%</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Escrow Fee and closing cost</td>
+        <td class="alignRight" title="= Property Purchase Price * Escrow Fee and closing cost Percentage">$<span id="b23"></span></td>
+        <td class="right"><input id="c23">%</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Misc</td>
+        <td class="alignRight">$<input id="b24"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom top boldEntry">Total Acquisition Costs</td>
+        <td class="bottom alignRight top" title="= sum(Acquisition Costs) - Downpayment">$<span id="b26"></span></td>
+        <td class="bottom right top"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td class="header">Hard Costs</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="top boldEntry underlinedEntry">Hard Costs-Horizontal</td>
+        <td class="top"></td>
+        <td class="right top"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class=""><button id="hch_add">add</button><button id="hch_delete">delete</button></td>
+        <td class="alignRight"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Asbestos Removal</td>
+        <td class="alignRight">$<input id="b31"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Demolition & Deconstruction</td>
+        <td class="alignRight">$<input id="b32"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Dry Utilities - Electricity & Gas - PGE, Cable & Internet - ATT</td>
+        <td class="alignRight">$<input id="b33"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Wet Utilities - Water</td>
+        <td class="alignRight">$<input id="b34"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Wet Utilities - Storm</td>
+        <td class="alignRight">$<input id="b35"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Wet Utilities - Sewer</td>
+        <td class="alignRight">$<input id="b36"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Construction Rentals - Temp Power Pole</td>
+        <td class="alignRight">$<input id="b37"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Construction Rentals - Temp Fence</td>
+        <td class="alignRight">$<input id="b38"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Construction Rentals - Toilet</td>
+        <td class="alignRight">$<input id="b39"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Construction Rentals - Dumpsters</td>
+        <td class="alignRight">$<input id="b40"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Construction Rentals - Scaffolding</td>
+        <td class="alignRight">$<input id="b41"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Rough Grading</td>
+        <td class="alignRight">$<input id="b42"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Total Hard Costs-Horizontal</td>
+        <td class="alignRight" title="= sum(Hard Costs-Horizontal)">$<span id="b43"></span></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry underlinedEntry">Hard Costs-Vertical</td>
+        <td></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class=""><button id="hcv_add">add</button><button id="hcv_delete">delete</button></td>
+        <td class="alignRight"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Foundation</td>
+        <td class="alignRight">$<input id="b46"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Framing</td>
+        <td class="alignRight">$<input id="b47"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Roof Truss</td>
+        <td class="alignRight">$<input id="b48"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Roofing</td>
+        <td class="alignRight">$<input id="b49"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Exterior Finishes - Sliding/Stucco</td>
+        <td class="alignRight">$<input id="b50"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Windows & Doors</td>
+        <td class="alignRight">$<input id="b51"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Mechanical</td>
+        <td class="alignRight">$<input id="b52"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Electrical</td>
+        <td class="alignRight">$<input id="b53"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Plumbing</td>
+        <td class="alignRight">$<input id="b54"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Electrical</td>
+        <td class="alignRight">$<input id="b55"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Fire Protection - Fire Sprinkler</td>
+        <td class="alignRight">$<input id="b56"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Insulation</td>
+        <td class="alignRight">$<input id="b57"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Sheetrock</td>
+        <td class="alignRight">$<input id="b58"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Painting</td>
+        <td class="alignRight">$<input id="b59"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Flooring</td>
+        <td class="alignRight">$<input id="b60"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Tile Works</td>
+        <td class="alignRight">$<input id="b61"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Woodwork</td>
+        <td class="alignRight">$<input id="b62"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Cabinetry</td>
+        <td class="alignRight">$<input id="b63"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Stone Fabrication</td>
+        <td class="alignRight">$<input id="b64"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Landscape</td>
+        <td class="alignRight">$<input id="b65"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>EV Charger</td>
+        <td class="alignRight">$<input id="b66"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Smart Home System</td>
+        <td class="alignRight">$<input id="b67"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Appliances</td>
+        <td class="alignRight">$<input id="b68"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Total Hard Costs-Vertical</td>
+        <td class="alignRight" title="= sum(Hard Costs-Vertical)">$<span id="b69"></span></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom top boldEntry">Total Hard Costs</td>
+        <td class="alignRight bottom top" title="= Total Hard Costs-Horizontal + Total Hard Costs-Vertical">$<span id="b70"></span></td>
+        <td class="bottom top right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td class="header">Soft Costs</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="top"><button id="sc_add">add</button><button id="sc_delete">delete</button></td>
+        <td class="alignRight top"></td>
+        <td class="right top"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="">Permit and entitlement</td>
+        <td class="alignRight">$<input id="b74"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Design fee</td>
+        <td class="alignRight">$<input id="b75"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Consulting fee</td>
+        <td class="alignRight">$<input id="b76"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>BMR fees</td>
+        <td class="alignRight">$<input id="b77"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Environmental</td>
+        <td class="alignRight">$<input id="b78"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class=""></td>
+        <td class=""></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom top boldEntry">Total Soft Costs</td>
+        <td class="alignRight bottom top" title="= sum(Soft Costs)">$<span id="b79"></span></td>
+        <td class="bottom right top"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td class="header">Holding Costs</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="top"><button id="hc_add">add</button><button id="hc_delete">delete</button></td>
+        <td class="alignRight top"></td>
+        <td class="right top"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="">Property Tax - Acquisition Phase</td>
+        <td class="alignRight" title="= Property Tax (Acquisition Phase Percentage) * Property Purchase Price / 12 * Acquisition+Design Term">$<span id="b83"></span></td>
+        <td class="right"><input id="c83">%</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Property Tax - Construction Phase</td>
+        <td class="alignRight" title="= Property Tax (Construction Phase Percentage) * Property Purchase Price / 12 * Construction Term">$<span id="b84"></span></td>
+        <td class="right"><input id="c84">%</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Insurance</td>
+        <td class="alignRight">$<input id="b85"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Utilities</td>
+        <td class="alignRight">$<input id="b86"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Trash</td>
+        <td class="alignRight">$<input id="b87"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class=""></td>
+        <td class=""></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom top boldEntry">Total Holding Costs</td>
+        <td class="alignRight bottom top" title="= sum(Holding Costs)">$<span id="b88"></span></td>
+        <td class="right bottom top"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td class="header">Financing Costs</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="top">Interest - Acquisition Phase</td>
+        <td class="alignRight top" title="= Monthly Payment * Terms">$<span id="b92"></span></td>
+        <td class="top"></td>
+        <td class="top"></td>
+        <td class="top left">PURCHASE LOAN</td>
+        <td class="top"></td>
+        <td class="right top"></td>
+      </tr>
+      <tr>
+        <td>Loan points and fees - Acquisition Phase</td>
+        <td class="alignRight" title="= Purchase Loan Loan points and fees">$<span id="b93"></span></td>
+        <td></td>
+        <td></td>
+        <td class="left">Loan Amount</td>
+        <td class="alignRight" title="= Property Purchase Price * Purchase Loan Loan Amount Percentage">$<span id="f93"></span></td>
+        <td class="right" title="= 1 - Downpayment Percentage"><span id="g93"></span>%</td>
+      </tr>
+      <tr>
+        <td>Mortgage prepaid in escrow</td>
+        <td class="alignRight">$<input id="b94"></td>
+        <td></td>
+        <td></td>
+        <td class="left">Monthly Payment</td>
+        <td class="alignRight" title="= Purchase Loan Loan Amount * Purchase Loan Monthly Payment Percentage / 12">$<span id="f94"></span></td>
+        <td class="right"><input id="g94">%</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="left">Terms</td>
+        <td class="alignRight"><input id="f95"></td>
+        <td class="right">mo</td>
+      </tr>
+      <tr>
+        <td><button id="fc_add">add</button><button id="fc_delete">delete</button></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="left bottom">Loan points and fees</td>
+        <td class="alignRight bottom" title="= Purchase Loan Loan Amount * Purchase Loan Loan points and fees Percentage">$<span id="f96"></span></td>
+        <td class="right bottom"><input id="g96">%</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="right"></td>
+      </tr>
+      <tr>
+        <td>Interest - Construction Phase</td>
+        <td class="alignRight" title="= Construction Loan Monthly Payment * Construction Loan Terms * Interest (Construction Phase) Percentage">$<span id="b98"></span></td>
+        <td class="yellowHighlight"><input id="c98" style="background: rgb(255, 255, 0);">%</td>
+        <td></td>
+        <td class="left top">CONSTRUCTION LOAN</td>
+        <td class="top"></td>
+        <td class="right top"></td>
+      </tr>
+      <tr>
+        <td>Loan points and fees - Construction Phase</td>
+        <td class="alignRight" title="= Construction Loan Loan points and fees">$<span id="b99"></span></td>
+        <td></td>
+        <td></td>
+        <td class="left">Loan Amount</td>
+        <td class="alignRight" title="= Construction Loan Amount + Purchase Loan Loan Amount">$<span id="f99"></span></td>
+        <td class="right"></td>
+      </tr>
+      <tr>
+        <td>Construction Draw fees</td>
+        <td class="alignRight">$<input id="b100"></td>
+        <td></td>
+        <td></td>
+        <td class="left">Construction Loan Amount</td>
+        <td class="alignRight" title="= Total Hard Costs * Construction Loan Amount Percentage">$<span id="f100"></span></td>
+        <td class="right"><input id="g100">%</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="left">Monthly Payment</td>
+        <td class="alignRight" title="= Construction Loan Loan Amount * Construction Loan Monthly Payment Percentage / 12">$<span id="f101"></span></td>
+        <td class="right"><input id="g101">%</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="left">Terms</td>
+        <td class="alignRight"><input id="f102"></td>
+        <td class="right">mo</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="left"><input id="e103">%LTC</td>
+        <td class="alignRight" title="= (Total Acquisition Costs + Total Hard Costs + Total Soft Costs + Total Holding Costs + Total Selling Costs) * LTC Percentage">$<span id="f103"></span></td>
+        <td class="right"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="left"><input id="e104">%LTARV</td>
+        <td class="alignRight" title="= LTARV Percentage * Total TH income">$<span id="f104"></span></td>
+        <td class="right"></td>
+      </tr>
+      <tr>
+        <td class="bottom top boldEntry">Total Financing Costs</td>
+        <td class="alignRight bottom top">$<span id="b105"></span></td>
+        <td class="bottom top"></td>
+        <td class="bottom"></td>
+        <td class="bottom left">Loan points and fees</td>
+        <td class="bottom alignRight" title="= Construction Loan Loan Amount * Construction Loan Loan points and fees Percentage">$<span id="f105"></span></td>
+        <td class="bottom right"><input id="g105">%</td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td class="header">Selling Costs</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="top">Listing Commission</td>
+        <td class="alignRight top" title="= Listing Commission Percentage * Total TH income">$<span id="b109"></span></td>
+        <td class="top right"><input id="c109">%</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Selling Commission</td>
+        <td class="alignRight" title="= Selling Commission Percentage * Total TH income">$<span id="b110"></span></td>
+        <td class="right"><input id="c110">%</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>closing Costs Budget</td>
+        <td class="alignRight" title="= Closing Costs Budget Percentage * Total TH income">$<span id="b111"></span></td>
+        <td class="right"><input id="c111">%</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Staging</td>
+        <td class="alignRight">$<input id="b112"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Photography</td>
+        <td class="alignRight">$<input id="b113"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Other Closing Cost</td>
+        <td class="alignRight">$<input id="b114"></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom top boldEntry">Total Selling Costs</td>
+        <td class="alignRight bottom top" title="= sum(Selling Costs)">$<span id="b115"></span></td>
+        <td class="bottom top right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td class="header">Revenue-Sales</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="top boldEntry">Sales Income</td>
+        <td class="top"></td>
+        <td class="top"></td>
+        <td class="top">Sales Price per Unit</td>
+        <td class="yellowHighlight alignRight right top">$<input id="e119" style="background: rgb(255, 255, 0);"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Total TH income</td>
+        <td class="alignRight" title="= Sales Price per Unit * Total Units-Living">$<span id="b120"></span></td>
+        <td></td>
+        <td></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Selling Cost</td>
+        <td class="alignRight" title="= Total Selling Costs">$<span id="b121"></span></td>
+        <td></td>
+        <td></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom top boldEntry">Net Income-Sales</td>
+        <td class="alignRight bottom top" title="= Total TH income - Selling Cost">$<span id="b122"></span></td>
+        <td class="bottom top"></td>
+        <td class="bottom"></td>
+        <td class="bottom right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td class="header">Revenue-Rent</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="top boldEntry">Rent Income</td>
+        <td class="top"></td>
+        <td class="top"></td>
+        <td class="top">Duration</td>
+        <td class="right top"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Total unit income</td>
+        <td class="alignRight" title="= (3150+2125+2100+2125) * Duration">$<span id="b127"></span></td>
+        <td></td>
+        <td class="alignRight"><input id="d127"></td>
+        <td class="right">mo</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Total Expense(include insurance)</td>
+        <td class="alignRight" title="= Total unit include * Total Expense (include insurance) Percentage">$<span id="b128"></span></td>
+        <td><input id="c128">%</td>
+        <td></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Property tax</td>
+        <td class="alignRight" title="= Duration * Property Purchase Price * Property tax Percentage / 12">$<span id="b129"></span></td>
+        <td><input id="c129">%</td>
+        <td></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom top boldEntry">Net Income-Rent</td>
+        <td class="alignRight bottom top" title="= Total unit include - Total Expense (include insurance) - Property tax">$<span id="b130"></span></td>
+        <td class="bottom top"></td>
+        <td class="bottom"></td>
+        <td class="bottom right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td class="header">Uses</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="top">Acquisition Costs</td>
+        <td class="alignRight top" title="= Total Acquisition Costs">$<span id="b134"></span></td>
+        <td class="top"></td>
+        <td class="top">Acquisition Costs per Unit</td>
+        <td class="alignRight top right" title="= Acquisition Costs / Total Units-Living">$<span id="e134"></span></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Holding costs</td>
+        <td class="alignRight" title="= Total Holding Costs">$<span id="b135"></span></td>
+        <td></td>
+        <td>Holding Costs per Unit</td>
+        <td class="alignRight right" title="= Holding Costs / Total Units-Living">$<span id="e135"></span></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Hard Costs</td>
+        <td class="alignRight" title="= Total Hard Costs">$<span id="b136"></span></td>
+        <td></td>
+        <td>Hard Costs per Unit</td>
+        <td class="alignRight right" title="= Hard Costs / Total Units-Living">$<span id="e136"></span></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Soft Costs</td>
+        <td class="alignRight" title="= Total Soft Costs">$<span id="b137"></span></td>
+        <td></td>
+        <td>Soft Costs per Unit</td>
+        <td class="alignRight right" title="= Soft Costs / Total Units-Living">$<span id="e137"></span></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Financing Costs</td>
+        <td class="alignRight" title="= Total Financing Costs">$<span id="b138"></span></td>
+        <td></td>
+        <td>Financing Costs per Unit</td>
+        <td class="alignRight right" title="= Financing Costs / Total Units-Living">$<span id="e138"></span></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Selling Costs</td>
+        <td class="alignRight" title="= Total Selling Costs">$<span id="b139"></span></td>
+        <td></td>
+        <td>Selling Costs per Unit</td>
+        <td class="alignRight right" title="= Selling Costs / Total Units-Living">$<span id="e139"></span></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom top boldEntry">Total Costs</td>
+        <td class="alignRight bottom top" title="= sum(Costs)">$<span id="b140"></span></td>
+        <td class="bottom"></td>
+        <td class="bottom top">Total Cost per Unit</td>
+        <td class="alignRight right bottom top" title="= sum(Costs per Unit)">$<span id="e140"></span></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td class="header">Return Metrics</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="top">Net Revenue less Selling Costs</td>
+        <td class="top alignRight" title="= Net Income-Sales + Net Income-Rent">$<span id="b144"></span></td>
+        <td class="top right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom">Total Costs</td>
+        <td class="bottom alignRight" title="= Total Acquisition Costs + Total Hard Costs + Total Soft Costs + Total Holding Costs + Total Financing Costs + Total Selling Costs">$<span id="b145"></span></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Total Profit</td>
+        <td class="alignRight" title="= Net Revenue less Selling Costs - Total Costs">$<span id="b146"></span></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">ROI</td>
+        <td class="alignRight redEntry" title="= Total Profit / Total Costs"><span id="b147"></span>%</td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="boldEntry">Over</td>
+        <td class="alignRight"><input id="b148"></td>
+        <td class="right">Months</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Cash Schedule</td>
+        <td></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Total Cash needed before construction</td>
+        <td class="alignRight" title="= sum(Acquisition Costs) - Property Purchase Price + Interest (Acquisition Phase) + Loan points and fees (Acquisition Phase) + Mortgage prepaid in escrow + Property Tax (Acquisition Phase) + (Utilities + Trash) * Acquisition+Design Term">$<span id="b151"></span></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Total Cash needed after Construction</td>
+        <td class="alignRight" title="= Total Soft Costs + Property Tax (Construction Phase) + Interest (Construction Phase) + Loan points and fees (Construction Phase) + Construction Draw fees + (Utilities + Trash) * Construction Term">$<span id="b152"></span></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td>Total Cash needed</td>
+        <td class="alignRight" title="= Total Cash needed before construction + Total Cash needed after construction">$<span id="b153"></span></td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="top boldEntry">Cash On Cash</td>
+        <td class="top alignRight redEntry" title="= Total Profit / Total Cash needed"><span id="b154"></span>%</td>
+        <td class="right"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr>
+        <td class="bottom boldEntry">Over</td>
+        <td class="bottom alignRight"><input id="b155"></td>
+        <td class="right bottom">Months</td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+        <td class="grayEntry"></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="grayEntry">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </section>
+</body>
+</html>
